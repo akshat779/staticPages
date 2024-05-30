@@ -47,3 +47,266 @@ nav{
 }
 
 /* nav end */
+
+/* header starts */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    margin-top: 2rem;
+}
+
+.main-heading{
+    font-size: 4rem;
+    font-family:var(--main-font);
+    transform: translateY(-40px);
+    color: #00000097;
+    line-height: 5rem;
+
+}
+
+.main-heading span{
+    color: black;
+}
+.primary-heading{
+    max-width: 500px;
+    font-family: var(--primary-font);
+    line-height: 25px;
+    margin-bottom: 1rem;
+    color:#716d6d; 
+}
+
+.btn-fill{
+    background:var(--main-color);
+    color:#fff;
+    border: none;
+    padding: 12px 20px;
+    margin-right:10px;
+    transition: all 0.5s ease-out;
+}
+
+.btn-fill:hover{
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.btn-outline{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    background:transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.btn-outline:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.img-container{
+    border-radius: 50%;
+    box-shadow: 4px 7px 5px 2px #bcbaba;
+}
+.header-img{
+    border-radius: 100%;
+    background: url("./Images/Hoodie\ by\ Oswaldo\ Ibanez.jpg");
+    background-size: cover;
+    background-position:top;
+    width: 400px;
+    height: 400px;
+
+}
+/* header end */
+
+/* section one start */
+
+.section-one{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 100vh; */
+    margin-top:7rem ;
+}
+
+.section-one-img{
+    background: url("./Images/Hoodie\ landing.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+/* section one ends */
+/* Products section starts */
+
+.products{
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.products .products-heading
+{
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.products .product-categories button{
+    margin-right: 20px;
+    margin-bottom: 2rem;
+
+}
+
+.products .product-item-container{
+    /* border: 1px solid black; */
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    max-width: 60rem;
+}
+
+.products .product-item-container .item-layer{
+    background: #ebf1f0;
+    padding: 40px;
+    margin-right: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.products .product-item-container .item-layer img{
+    width: 150px;
+    height: 200px;
+
+}
+
+.products .product-item-container .item .item-name{
+    font-family:var(--primary-font) ;
+    margin-bottom: 10px;
+
+}
+.products .product-item-container .item .item-price{
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+}
+
+.products .product-item-container .item .view-product{
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+/* Products section ends */
+
+.customer-reviews{
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customer{
+    text-align: center;
+}
+
+.customer-heading{
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.customer-reviews .customer-description{
+    font-size: 12px;
+    margin-top: 20px;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    font-family: var(--primary-font);
+}
+
+.customer .customer-img .img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.customer .img-one{
+    background: url("./Images/Hoodie\ Yogendra\ Singh.jpg");
+}
+
+.customer .img-two{
+    background: url("./Images/Hoodie\ Joshua\ Rondeau\ \(1\).jpg");
+}
+
+.customer .img-three{
+    background: url("./Images/Hoodie\ unsplash.jpg");
+}
+
+footer{
+    background:#1f1e1e ;
+    margin-top: 10rem;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    font-family: var(--primary-font);
+}
+
+footer .container .footer-heading{
+    margin-bottom: 3rem;
+}
+
+footer .container .footer-primary-heading{
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* footer end */
+
+@media only screen and (max-width: 900px){
+    header{
+        height: 120vh;
+        text-align: center;
+    }
+    .section-one{
+        height: 120vh;
+        text-align: center;
+    }
+    .header-img{
+        width: 250px;
+        height: 250px;
+
+    }
+    .main-heading{
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    .primary-heading{
+        width: 400px;
+    }
+    .customer .customer-img .img{
+        width: 150px;
+        height: 150px;
+    }
+}
